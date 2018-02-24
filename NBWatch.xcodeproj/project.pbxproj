@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		847A4338203FA9DB00717CBC /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A4337203FA9DB00717CBC /* BaseTabViewController.swift */; };
+		847A433A203FAA0900717CBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A4339203FAA0900717CBC /* HomeViewController.swift */; };
+		847A433C203FAA1B00717CBC /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A433B203FAA1B00717CBC /* MineViewController.swift */; };
+		847A433E203FABA900717CBC /* BaseNavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A433D203FABA900717CBC /* BaseNavgationViewController.swift */; };
+		847A4341203FC38D00717CBC /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A4340203FC38D00717CBC /* LocationViewController.swift */; };
+		847A4369203FF8A300717CBC /* NetApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A4368203FF8A300717CBC /* NetApis.swift */; };
+		847A436C203FF92900717CBC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847A436E203FF92900717CBC /* Localizable.strings */; };
+		847A4375203FFB1100717CBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847A4377203FFB1100717CBC /* InfoPlist.strings */; };
+		847A437A2040078700717CBC /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A43792040078600717CBC /* HRToast+UIView.swift */; };
+		847A437C20400C2500717CBC /* Configure+AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A437B20400C2500717CBC /* Configure+AppDelegate.swift */; };
+		847A43822040109A00717CBC /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A43812040109A00717CBC /* MineView.swift */; };
+		847A438D2040F66500717CBC /* MinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A438C2040F66500717CBC /* MinePresenter.swift */; };
+		847A438F2040FA3600717CBC /* PwdResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A438E2040FA3600717CBC /* PwdResetViewController.swift */; };
+		84C96ECB202AEA1300A9F743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96ECA202AEA1300A9F743 /* AppDelegate.swift */; };
+		84C96ECD202AEA1300A9F743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96ECC202AEA1300A9F743 /* ViewController.swift */; };
+		84C96ED0202AEA1300A9F743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C96ECE202AEA1300A9F743 /* Main.storyboard */; };
+		84C96ED2202AEA1300A9F743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C96ED1202AEA1300A9F743 /* Assets.xcassets */; };
+		84C96ED5202AEA1300A9F743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C96ED3202AEA1300A9F743 /* LaunchScreen.storyboard */; };
+		84C96EE0202AEA1400A9F743 /* NBWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96EDF202AEA1400A9F743 /* NBWatchTests.swift */; };
+		84C96EFD202B00D700A9F743 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96EFC202B00D700A9F743 /* Presenter.swift */; };
+		84C96EFF202BE7A800A9F743 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96EFE202BE7A800A9F743 /* BaseModel.swift */; };
+		84C96F01202BEBBF00A9F743 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F00202BEBBF00A9F743 /* LoginModel.swift */; };
+		84C96F04202C427000A9F743 /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C96F03202C427000A9F743 /* ReadMe.strings */; };
+		84C96F0A202C458A00A9F743 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F09202C458A00A9F743 /* AccountPresenter.swift */; };
+		84C96F0C202C467000A9F743 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F0B202C467000A9F743 /* BaseProtocol.swift */; };
+		84C96F0E202C46E400A9F743 /* AccountProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F0D202C46E400A9F743 /* AccountProtocol.swift */; };
+		84C96F10202C489700A9F743 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F0F202C489700A9F743 /* BaseViewController.swift */; };
+		84C96F12202C48A900A9F743 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F11202C48A900A9F743 /* LoginViewController.swift */; };
+		84C96F14202C4C6400A9F743 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F13202C4C6400A9F743 /* BasePresenter.swift */; };
+		84C96F16202C52CB00A9F743 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F15202C52CB00A9F743 /* BaseView.swift */; };
+		84C96F18202C52E500A9F743 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F17202C52E500A9F743 /* AccountView.swift */; };
+		84C96F1A202C542000A9F743 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F19202C542000A9F743 /* Macros.swift */; };
+		84C96F1C202D327500A9F743 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C96F1B202D327500A9F743 /* NetManager.swift */; };
+		84C96F20202D3B7300A9F743 /* Pods_NBWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43298340AEDC7A8182958FA /* Pods_NBWatch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84C96EDC202AEA1300A9F743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C96EBF202AEA1300A9F743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C96EC6202AEA1300A9F743;
+			remoteInfo = NBWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		847A4337203FA9DB00717CBC /* BaseTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabViewController.swift; sourceTree = "<group>"; };
+		847A4339203FAA0900717CBC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		847A433B203FAA1B00717CBC /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		847A433D203FABA900717CBC /* BaseNavgationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavgationViewController.swift; sourceTree = "<group>"; };
+		847A4340203FC38D00717CBC /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		847A435B203FF57100717CBC /* NBWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NBWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		847A4368203FF8A300717CBC /* NetApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetApis.swift; sourceTree = "<group>"; };
+		847A436D203FF92900717CBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		847A436F203FF95200717CBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		847A4370203FF95200717CBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		847A4371203FF95200717CBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		847A4372203FF9BE00717CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		847A4376203FFB1100717CBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		847A4378203FFB1500717CBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		847A43792040078600717CBC /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		847A437B20400C2500717CBC /* Configure+AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configure+AppDelegate.swift"; sourceTree = "<group>"; };
+		847A43812040109A00717CBC /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
+		847A438C2040F66500717CBC /* MinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinePresenter.swift; sourceTree = "<group>"; };
+		847A438E2040FA3600717CBC /* PwdResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwdResetViewController.swift; sourceTree = "<group>"; };
+		84C96EC7202AEA1300A9F743 /* NBWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C96ECA202AEA1300A9F743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C96ECC202AEA1300A9F743 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84C96ECF202AEA1300A9F743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C96ED1202AEA1300A9F743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C96ED4202AEA1300A9F743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C96ED6202AEA1300A9F743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C96EDB202AEA1300A9F743 /* NBWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C96EDF202AEA1400A9F743 /* NBWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBWatchTests.swift; sourceTree = "<group>"; };
+		84C96EE1202AEA1400A9F743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C96EFC202B00D700A9F743 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		84C96EFE202BE7A800A9F743 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		84C96F00202BEBBF00A9F743 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		84C96F03202C427000A9F743 /* ReadMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ReadMe.strings; sourceTree = "<group>"; };
+		84C96F09202C458A00A9F743 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		84C96F0B202C467000A9F743 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		84C96F0D202C46E400A9F743 /* AccountProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProtocol.swift; sourceTree = "<group>"; };
+		84C96F0F202C489700A9F743 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84C96F11202C48A900A9F743 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		84C96F13202C4C6400A9F743 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		84C96F15202C52CB00A9F743 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		84C96F17202C52E500A9F743 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		84C96F19202C542000A9F743 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		84C96F1B202D327500A9F743 /* NetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
+		84C96F1F202D3A9E00A9F743 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28F22920E6CC5949F88ED77 /* Pods-NBWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBWatch/Pods-NBWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		B43298340AEDC7A8182958FA /* Pods_NBWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB556322121AF93B6B6ABF20 /* Pods-NBWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBWatch/Pods-NBWatch.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C96EC4202AEA1300A9F743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C96F20202D3B7300A9F743 /* Pods_NBWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C96ED8202AEA1300A9F743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E339423687A5608C3A2D48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F1F202D3A9E00A9F743 /* Moya.framework */,
+				B43298340AEDC7A8182958FA /* Pods_NBWatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		193ED7F87D4E590532B0B505 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A28F22920E6CC5949F88ED77 /* Pods-NBWatch.debug.xcconfig */,
+				BB556322121AF93B6B6ABF20 /* Pods-NBWatch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		847A433F203FC35C00717CBC /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				847A43852040F2EB00717CBC /* Model */,
+				847A43832040F2EB00717CBC /* Presenter */,
+				847A43842040F2EB00717CBC /* View */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		847A43832040F2EB00717CBC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		847A43842040F2EB00717CBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847A4340203FC38D00717CBC /* LocationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		847A43852040F2EB00717CBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847A43862040F2FC00717CBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847A43872040F2FC00717CBC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				847A438C2040F66500717CBC /* MinePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		847A43882040F2FC00717CBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847A43812040109A00717CBC /* MineView.swift */,
+				847A433B203FAA1B00717CBC /* MineViewController.swift */,
+				847A438E2040FA3600717CBC /* PwdResetViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		847A43892040F30A00717CBC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		847A438A2040F30A00717CBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		847A438B2040F30A00717CBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847A4339203FAA0900717CBC /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C96EBE202AEA1300A9F743 = {
+			isa = PBXGroup;
+			children = (
+				84C96EC9202AEA1300A9F743 /* NBWatch */,
+				84C96EDE202AEA1300A9F743 /* NBWatchTests */,
+				84C96EC8202AEA1300A9F743 /* Products */,
+				193ED7F87D4E590532B0B505 /* Pods */,
+				13E339423687A5608C3A2D48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84C96EC8202AEA1300A9F743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EC7202AEA1300A9F743 /* NBWatch.app */,
+				84C96EDB202AEA1300A9F743 /* NBWatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C96EC9202AEA1300A9F743 /* NBWatch */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EED202AEC0200A9F743 /* General */,
+				84C96EEC202AEB8F00A9F743 /* SupportingFiles */,
+				84C96EEA202AEB5E00A9F743 /* AppDelegate */,
+				84C96ECC202AEA1300A9F743 /* ViewController.swift */,
+				84C96ECE202AEA1300A9F743 /* Main.storyboard */,
+				84C96ED3202AEA1300A9F743 /* LaunchScreen.storyboard */,
+			);
+			path = NBWatch;
+			sourceTree = "<group>";
+		};
+		84C96EDE202AEA1300A9F743 /* NBWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EDF202AEA1400A9F743 /* NBWatchTests.swift */,
+				84C96EE1202AEA1400A9F743 /* Info.plist */,
+			);
+			path = NBWatchTests;
+			sourceTree = "<group>";
+		};
+		84C96EEA202AEB5E00A9F743 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84C96ECA202AEA1300A9F743 /* AppDelegate.swift */,
+				847A437B20400C2500717CBC /* Configure+AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84C96EEC202AEB8F00A9F743 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				847A435B203FF57100717CBC /* NBWatch-Bridging-Header.h */,
+				84C96ED1202AEA1300A9F743 /* Assets.xcassets */,
+				84C96ED6202AEA1300A9F743 /* Info.plist */,
+				84C96F03202C427000A9F743 /* ReadMe.strings */,
+				847A436E203FF92900717CBC /* Localizable.strings */,
+				847A4377203FFB1100717CBC /* InfoPlist.strings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		84C96EED202AEC0200A9F743 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EF1202AEC4600A9F743 /* Macro */,
+				84C96EF0202AEC3500A9F743 /* Modules */,
+				84C96EEF202AEC2A00A9F743 /* Category */,
+				84C96EEE202AEC1B00A9F743 /* Libs */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		84C96EEE202AEC1B00A9F743 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		84C96EEF202AEC2A00A9F743 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				847A43792040078600717CBC /* HRToast+UIView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		84C96EF0202AEC3500A9F743 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				847A433F203FC35C00717CBC /* Location */,
+				84C96F05202C44E100A9F743 /* Account */,
+				84C96EFA202AECD600A9F743 /* Mine */,
+				84C96EF9202AECD000A9F743 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84C96EF1202AEC4600A9F743 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EFB202AEDE700A9F743 /* DB */,
+				84C96EF5202AEC8D00A9F743 /* MVP */,
+				84C96EF4202AEC7C00A9F743 /* NetworkEngine */,
+				84C96EF3202AEC6D00A9F743 /* MainArchitecyure */,
+				84C96EF2202AEC5E00A9F743 /* Public */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		84C96EF2202AEC5E00A9F743 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F19202C542000A9F743 /* Macros.swift */,
+				847A4368203FF8A300717CBC /* NetApis.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		84C96EF3202AEC6D00A9F743 /* MainArchitecyure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainArchitecyure;
+			sourceTree = "<group>";
+		};
+		84C96EF4202AEC7C00A9F743 /* NetworkEngine */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F1B202D327500A9F743 /* NetManager.swift */,
+			);
+			path = NetworkEngine;
+			sourceTree = "<group>";
+		};
+		84C96EF5202AEC8D00A9F743 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EF8202AECAC00A9F743 /* Views */,
+				84C96EF7202AECA300A9F743 /* Models */,
+				84C96EF6202AEC9700A9F743 /* Presenter */,
+				84C96F0B202C467000A9F743 /* BaseProtocol.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		84C96EF6202AEC9700A9F743 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EFC202B00D700A9F743 /* Presenter.swift */,
+				84C96F13202C4C6400A9F743 /* BasePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84C96EF7202AECA300A9F743 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C96EFE202BE7A800A9F743 /* BaseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C96EF8202AECAC00A9F743 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F0F202C489700A9F743 /* BaseViewController.swift */,
+				847A4337203FA9DB00717CBC /* BaseTabViewController.swift */,
+				847A433D203FABA900717CBC /* BaseNavgationViewController.swift */,
+				84C96F15202C52CB00A9F743 /* BaseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C96EF9202AECD000A9F743 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				847A438A2040F30A00717CBC /* Model */,
+				847A43892040F30A00717CBC /* Presenter */,
+				847A438B2040F30A00717CBC /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84C96EFA202AECD600A9F743 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				847A43862040F2FC00717CBC /* Model */,
+				847A43872040F2FC00717CBC /* Presenter */,
+				847A43882040F2FC00717CBC /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		84C96EFB202AEDE700A9F743 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		84C96F05202C44E100A9F743 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F08202C453100A9F743 /* Presenter */,
+				84C96F07202C452800A9F743 /* View */,
+				84C96F06202C452100A9F743 /* Model */,
+				84C96F0D202C46E400A9F743 /* AccountProtocol.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		84C96F06202C452100A9F743 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F00202BEBBF00A9F743 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84C96F07202C452800A9F743 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F11202C48A900A9F743 /* LoginViewController.swift */,
+				84C96F17202C52E500A9F743 /* AccountView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C96F08202C453100A9F743 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				84C96F09202C458A00A9F743 /* AccountPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C96EC6202AEA1300A9F743 /* NBWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C96EE4202AEA1400A9F743 /* Build configuration list for PBXNativeTarget "NBWatch" */;
+			buildPhases = (
+				33508637264B7044E663CA4E /* [CP] Check Pods Manifest.lock */,
+				84C96EC3202AEA1300A9F743 /* Sources */,
+				84C96EC4202AEA1300A9F743 /* Frameworks */,
+				84C96EC5202AEA1300A9F743 /* Resources */,
+				5636EB990FF3A855C410CD84 /* [CP] Embed Pods Frameworks */,
+				3B273F9871890D1103C6976B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBWatch;
+			productName = NBWatch;
+			productReference = 84C96EC7202AEA1300A9F743 /* NBWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84C96EDA202AEA1300A9F743 /* NBWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C96EE7202AEA1400A9F743 /* Build configuration list for PBXNativeTarget "NBWatchTests" */;
+			buildPhases = (
+				84C96ED7202AEA1300A9F743 /* Sources */,
+				84C96ED8202AEA1300A9F743 /* Frameworks */,
+				84C96ED9202AEA1300A9F743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C96EDD202AEA1300A9F743 /* PBXTargetDependency */,
+			);
+			name = NBWatchTests;
+			productName = NBWatchTests;
+			productReference = 84C96EDB202AEA1300A9F743 /* NBWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C96EBF202AEA1300A9F743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com;
+				TargetAttributes = {
+					84C96EC6202AEA1300A9F743 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+					};
+					84C96EDA202AEA1300A9F743 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84C96EC6202AEA1300A9F743;
+					};
+				};
+			};
+			buildConfigurationList = 84C96EC2202AEA1300A9F743 /* Build configuration list for PBXProject "NBWatch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 84C96EBE202AEA1300A9F743;
+			productRefGroup = 84C96EC8202AEA1300A9F743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C96EC6202AEA1300A9F743 /* NBWatch */,
+				84C96EDA202AEA1300A9F743 /* NBWatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C96EC5202AEA1300A9F743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847A436C203FF92900717CBC /* Localizable.strings in Resources */,
+				847A4375203FFB1100717CBC /* InfoPlist.strings in Resources */,
+				84C96F04202C427000A9F743 /* ReadMe.strings in Resources */,
+				84C96ED5202AEA1300A9F743 /* LaunchScreen.storyboard in Resources */,
+				84C96ED2202AEA1300A9F743 /* Assets.xcassets in Resources */,
+				84C96ED0202AEA1300A9F743 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C96ED9202AEA1300A9F743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33508637264B7044E663CA4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B273F9871890D1103C6976B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NBWatch/Pods-NBWatch-resources.sh",
+				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBWatch/Pods-NBWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5636EB990FF3A855C410CD84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NBWatch/Pods-NBWatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/PermissionScope/PermissionScope.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProgressHUD/SwiftProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PermissionScope.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBWatch/Pods-NBWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C96EC3202AEA1300A9F743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C96F01202BEBBF00A9F743 /* LoginModel.swift in Sources */,
+				84C96EFD202B00D700A9F743 /* Presenter.swift in Sources */,
+				847A43822040109A00717CBC /* MineView.swift in Sources */,
+				847A438D2040F66500717CBC /* MinePresenter.swift in Sources */,
+				84C96ECD202AEA1300A9F743 /* ViewController.swift in Sources */,
+				847A433A203FAA0900717CBC /* HomeViewController.swift in Sources */,
+				847A437C20400C2500717CBC /* Configure+AppDelegate.swift in Sources */,
+				84C96F16202C52CB00A9F743 /* BaseView.swift in Sources */,
+				84C96F1A202C542000A9F743 /* Macros.swift in Sources */,
+				847A4369203FF8A300717CBC /* NetApis.swift in Sources */,
+				84C96EFF202BE7A800A9F743 /* BaseModel.swift in Sources */,
+				84C96F0A202C458A00A9F743 /* AccountPresenter.swift in Sources */,
+				847A438F2040FA3600717CBC /* PwdResetViewController.swift in Sources */,
+				847A4338203FA9DB00717CBC /* BaseTabViewController.swift in Sources */,
+				84C96F14202C4C6400A9F743 /* BasePresenter.swift in Sources */,
+				84C96F10202C489700A9F743 /* BaseViewController.swift in Sources */,
+				847A433C203FAA1B00717CBC /* MineViewController.swift in Sources */,
+				84C96ECB202AEA1300A9F743 /* AppDelegate.swift in Sources */,
+				84C96F0C202C467000A9F743 /* BaseProtocol.swift in Sources */,
+				847A433E203FABA900717CBC /* BaseNavgationViewController.swift in Sources */,
+				847A4341203FC38D00717CBC /* LocationViewController.swift in Sources */,
+				84C96F12202C48A900A9F743 /* LoginViewController.swift in Sources */,
+				84C96F18202C52E500A9F743 /* AccountView.swift in Sources */,
+				84C96F1C202D327500A9F743 /* NetManager.swift in Sources */,
+				847A437A2040078700717CBC /* HRToast+UIView.swift in Sources */,
+				84C96F0E202C46E400A9F743 /* AccountProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C96ED7202AEA1300A9F743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C96EE0202AEA1400A9F743 /* NBWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C96EDD202AEA1300A9F743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C96EC6202AEA1300A9F743 /* NBWatch */;
+			targetProxy = 84C96EDC202AEA1300A9F743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847A436E203FF92900717CBC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847A436D203FF92900717CBC /* en */,
+				847A4371203FF95200717CBC /* zh-Hans */,
+				847A4372203FF9BE00717CBC /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		847A4377203FFB1100717CBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847A4376203FFB1100717CBC /* zh-Hans */,
+				847A4378203FFB1500717CBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84C96ECE202AEA1300A9F743 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C96ECF202AEA1300A9F743 /* Base */,
+				847A436F203FF95200717CBC /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C96ED3202AEA1300A9F743 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C96ED4202AEA1300A9F743 /* Base */,
+				847A4370203FF95200717CBC /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C96EE2202AEA1400A9F743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C96EE3202AEA1400A9F743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C96EE5202AEA1400A9F743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28F22920E6CC5949F88ED77 /* Pods-NBWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CKXF9F3R3Y;
+				INFOPLIST_FILE = NBWatch/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hojy.NBWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3382d1df-07e2-4cb0-bf32-3877a97068bf";
+				PROVISIONING_PROFILE_SPECIFIER = customDev;
+				SWIFT_OBJC_BRIDGING_HEADER = "NBWatch/SupportingFiles/NBWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84C96EE6202AEA1400A9F743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB556322121AF93B6B6ABF20 /* Pods-NBWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CKXF9F3R3Y;
+				INFOPLIST_FILE = NBWatch/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hojy.NBWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48235502-c9fe-4ece-9950-26c03452af79";
+				PROVISIONING_PROFILE_SPECIFIER = customAdhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "NBWatch/SupportingFiles/NBWatch-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		84C96EE8202AEA1400A9F743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NBWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hojy.NBWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBWatch.app/NBWatch";
+			};
+			name = Debug;
+		};
+		84C96EE9202AEA1400A9F743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NBWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hojy.NBWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBWatch.app/NBWatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C96EC2202AEA1300A9F743 /* Build configuration list for PBXProject "NBWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C96EE2202AEA1400A9F743 /* Debug */,
+				84C96EE3202AEA1400A9F743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C96EE4202AEA1400A9F743 /* Build configuration list for PBXNativeTarget "NBWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C96EE5202AEA1400A9F743 /* Debug */,
+				84C96EE6202AEA1400A9F743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C96EE7202AEA1400A9F743 /* Build configuration list for PBXNativeTarget "NBWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C96EE8202AEA1400A9F743 /* Debug */,
+				84C96EE9202AEA1400A9F743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C96EBF202AEA1300A9F743 /* Project object */;
+}

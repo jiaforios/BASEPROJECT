@@ -1,0 +1,18 @@
+
+/*
+ 
+基于MVP 设计
+
+M: model 处理数据
+V: view  处理视图显示
+P: Presenter 中间协调者（网络事件等）
+
+基于MVP 的设计中VC依然存在，同样作为中间协调者存在（交互事件等）
+
+流程：
+1.view 作为视图容器将交互事件通过block 传递给 VC ，
+2.VC 负责处理全部的交互事件分配到Presenter，
+3.Presenter可发起网络请求等并完成model处理，通过delegate 返回到VC
+4.VC将数据反馈到view
+
+ */
